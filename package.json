@@ -1,0 +1,20 @@
+{
+  "name": "home-sessions1",
+  "version": "1.0.0",
+  "description": "ANDELABS HOME SESSION",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maximuf/home-sessions1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maximuf/home-sessions1/issues"
+  },
+  "homepage": "https://github.com/Maximuf/home-sessions1#readme"
+}
