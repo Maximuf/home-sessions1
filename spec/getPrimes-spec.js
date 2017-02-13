@@ -1,6 +1,6 @@
 //My test cases for getPrimes
 'use strict'
-var app = require("../app/getprime.js");
+var app = require("../app/library.js");
 describe("Cases for invalid input", function() {
 	describe("Cases for empty input", function() {
 		it("should return `No input Please enter a number` for ()", function() {
@@ -33,27 +33,27 @@ describe("Cases for invalid input", function() {
 	});
 	describe("Cases For Numbers as input", function(){
 		it("should return [2, 3, 5, 7, 11, 13, 17, 19] for 20", function() {
-			expect(app.getPrimes(20))toBe([2, 3, 5, 7, 11, 13, 17, 19]);
+			expect(app.getPrimes(20)).toEqual([2, 3, 5, 7, 11, 13, 17, 19]);
 		});
 
 		it("should return [2, 3, 5, 7, 11, 13, 17, 19, 23, 29] for 30", function() {
-			expect(app.getPrimes(30))toBe([2, 3, 5, 7, 11, 13, 17, 19, 23, 29]);
+			expect(app.getPrimes(30)).toEqual([2, 3, 5, 7, 11, 13, 17, 19, 23, 29]);
 		});
 
 		it("should return [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47] for 50", function() {
-			expect(app.getPrimes(50))toBe([2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47]);
+			expect(app.getPrimes(50)).toEqual([2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47]);
 		});
 
 		it("should return [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47] for 40", function() {
-			expect(app.getPrimes(40))toBe([2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37]);
+			expect(app.getPrimes(40)).toEqual([2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37]);
 		});
 
 		it("should return [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67] for 70", function() {
-			expect(app.getPrimes(70))toBe([2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67]);
+			expect(app.getPrimes(70)).toEqual([2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67]);
 		});
 
 		it("should return [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97] for 100", function() {
-			expect(app.getPrimes(70))toBe([2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]);
+			expect(app.getPrimes(100)).toEqual([2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]);
 		});
 
 	});
